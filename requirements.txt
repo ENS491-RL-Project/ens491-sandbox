@@ -5,6 +5,7 @@ minigrid>=2.3.0
 stable-baselines3>=2.0.0
 
 # Progressive Networks
+doric --no-deps
 
 # Experiment tracking
 wandb
