@@ -10,11 +10,11 @@ env = make_vec_env(
 )
 
 # PPO agent - FlatObs için MlpPolicy
-model = PPO("MlpPolicy", env, verbose=1, device="cuda")
+model = PPO("MlpPolicy", env, verbose=1, device="auto")
 
 # Train et
 model.learn(total_timesteps=100_000)
 
 # Kaydet
-model.save("ppo_empty")
-print("Training tamamlandı!")
+model.save("minigrid-basics/ppo_empty")
+print("Training is done!")
